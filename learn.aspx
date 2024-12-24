@@ -8,20 +8,8 @@
 
         <h1>Learn How to make falafel, from the best.</h1>
         <h2>A falafel community for everyone.</h2>  
-        <a class="button" href="learn" style="float: left; margin-right: 200px;">Basic Tutorial - How to make Falafel</a>
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
+        <a class="button" href="learn" style="float: left;">Basic Tutorial - How to make Falafel</a>
+        <div style="margin-bottom: 260px"></div>
         <h1>Introduction</h1>
         <p>
             Falafel Is for everyone. If you want to do it, you can. <br />
@@ -29,13 +17,7 @@
             Falafel, from the most basic tutorial on how to make<br />
             it to how to improve on a really advanced level.
         </p>
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
+        <div style="margin-bottom: 140px"></div>
     </div>
 
 </asp:Content>
