@@ -1,6 +1,21 @@
 ﻿* {
     font-family: 'Sitka Banner';
 }
+.tutorial {
+    text-align: center; 
+    margin: 0 auto; 
+}
+.navi {
+    padding: 10px;
+    text-align: center;
+    background-color: turquoise
+}
+nav a {
+    color: white; 
+    text-decoration: none; 
+    padding: 10px 15px; 
+    margin: 0 10px; 
+}
 
 .button {
     background-color: #04AA6D;
@@ -11,8 +26,5 @@
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-}
-
-.tutorial {
-    background-image: url('imgs/Tutorial/Falafel-020.jpg');
+    margin: 0 auto;
 }
