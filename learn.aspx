@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="VB" MasterPageFile="~/MasterPage.master" AutoEventWireup="false" CodeFile="learn.aspx.vb" Inherits="_Default" %>
+﻿<%@ Page Title="" Language="VB" MasterPageFile="~/MasterPage.master" AutoEventWireup="false" CodeFile="learn.aspx.vb" Inherits="learn" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
@@ -8,7 +8,7 @@
 
         <h1>Learn How to make falafel, from the best.</h1>
         <h2>A falafel community for everyone.</h2>  
-         <a class ="button" href="learn">Learn How To Do it.</a>
+        <a class="button" href="learn" style="float: left; margin-right: 200px;">Basic Tutorial - How to make Falafel</a>
         <br />
         <br />
         <br />

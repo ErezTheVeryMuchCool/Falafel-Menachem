@@ -1,5 +1,5 @@
 ﻿
-Partial Class _learn
+Partial Class learn
     Inherits System.Web.UI.Page
 
 End Class
