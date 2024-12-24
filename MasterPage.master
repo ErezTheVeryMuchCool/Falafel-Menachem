@@ -12,9 +12,9 @@
 <body>
     <div class ="navi">
         <nav>
-            <a href="homepage.html">Home</a>
-            <a href="register.html">Register</a>
-            <a href="gallery.html">Photo Gallery</a>
+            <a href="homepage.aspx">Home</a>
+            <a href="register.aspx">Register</a>
+            <a href="gallery.aspx">Photo Gallery</a>
         </nav>
     </div>
     <form id="form1" runat="server">

@@ -7,7 +7,7 @@
         <h1>Welcone to falfel Menahem</h1>
         <h2>A falafel community for everyone.</h2>  
         <a class ="button" href="learn.aspx">Learn How To Do it.</a>
-
+        <br />
     </div>
 
 </asp:Content>
