@@ -8,6 +8,7 @@
 .hero {
     text-align: center;
     margin: 0 auto;
+    background-image: url('imgs/Falafel.jpg');
 }
 .navi {
     padding: 10px;
