@@ -12,11 +12,18 @@
 <body>
     <div class ="navi">
         <nav>
-            <a href="homepage.aspx">Home</a>
-            <a href="register.aspx">Register</a>
-            <a href="gallery.aspx">Photo Gallery</a>
+            <img src="imgs/Logo.png" width ="100px"/>
+            <h1 style="margin: 0; font-size: 1.5rem;">Falafel Menachem</h1>
+            <div style="margin-left: auto;">
+                <a href="homepage.aspx" style="margin: 0 10px;">Home</a>
+                <a href="register.aspx" style="margin: 0 10px;">Register</a>
+                <a href="gallery.aspx" style="margin: 0 10px;">Photo Gallery</a>
+            </div>
         </nav>
+
     </div>
+
+
     <form id="form1" runat="server">
     <div>
         <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
@@ -24,5 +31,15 @@
         </asp:ContentPlaceHolder>
     </div>
     </form>
+        <div class foot>
+        <footer>
+            <p>&copy; 2024 Your Company Name. All rights reserved.</p>
+            <p>Follow us on 
+                <a href="https://www.facebook.com" target="_blank">Facebook</a>, 
+                <a href="https://www.twitter.com" target="_blank">Twitter</a>, and 
+                <a href="https://www.instagram.com" target="_blank">Instagram</a>.
+            </p>
+        </footer>
+    </div>
 </body>
 </html>
