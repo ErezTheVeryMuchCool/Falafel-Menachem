@@ -1,4 +1,4 @@
-﻿<%@ Master Language="VB" CodeFile="MasterPage.master.vb" Inherits="MasterPage" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
 
 <!DOCTYPE html>
 
@@ -31,7 +31,7 @@
         </asp:ContentPlaceHolder>
     </div>
     </form>
-        <div class foot>
+        <div class="foot">
         <footer>
             <p>&copy; 2024 Your Company Name. All rights reserved.</p>
             <p>Follow us on 
