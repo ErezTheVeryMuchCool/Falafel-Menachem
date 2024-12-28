@@ -6,14 +6,13 @@
 <head runat="server">
     <title>Falafel Menachem</title>
     <link rel="stylesheet" href="myStyle.css" />
-    <link href='https://fonts.googleapis.com/css?family=Heebo' rel='stylesheet'>
     <asp:ContentPlaceHolder id="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
 <body>
     <div class ="navi">
         <nav>
-            <img src="imgs/Logo.png" width ="100px"/>
+            <img src="Images/logo.png" width ="100px"/>
             <h1 style="margin: 0; font-size: 1.5rem;">Falafel Menachem</h1>
             <div style="margin-left: auto;">
                 <a href="homepage.aspx" style="margin: 0 10px;">Home</a>

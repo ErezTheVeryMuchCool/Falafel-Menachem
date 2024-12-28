@@ -12,7 +12,8 @@ body {
     display: flex;
     flex-direction: column;
     height: 100vh;
-    background-color: #BF6900;
+    background-color: #D85D00;
+    gap: 0;
 }
 .tutorial {
     text-align: center; 
@@ -20,8 +21,8 @@ body {
 }
 .hero {
     text-align: center;
-    margin: 0 auto;
-
+    margin: 0;
+    padding: 0;
 }
 .hero h1 {
     color: white;
@@ -58,6 +59,12 @@ body {
     paint-order: stroke fill;
     color: white;
     margin-left: 40px;
+
+}
+.list {
+    background-color: #FF9F3D;
+    margin-up:200px;
+    padding: 0;
 }
 nav a {
     color: white; 
@@ -89,6 +96,7 @@ nav a {
     font-size: 16px;
     font-weight: bold;
     border-radius: 50px;
+    margin-left: 100px;
 }
 .tos{
     margin-right:50px;
@@ -97,5 +105,48 @@ nav a {
 }
 .foreveryone img{
     border-radius:100px;
-    align:"right";
+    float: right;
+}
+.foreveryone h1,
+.foreveryone h3 {
+    -webkit-text-stroke: 6px black;
+    paint-order: stroke fill;
+    color: white;
+    margin-left: 100px;
+}
+
+.foreveryone {
+    background-color: #F08000;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.bod {
+    margin: 0;
+    padding: 0;
+/*    display: flex;*/
+    gap: 0;
+}
+
+.menahem {
+    background-color: #FFB875;
+}
+
+.menahem p {
+    text-align: center;
+    float: right;
+    margin-right: 150px;
+    -webkit-text-stroke: 8px black;
+    paint-order: stroke fill;
+    color: white;
+    font-size: 32px;
+}
+
+.menahem h1 {
+    text-align: center;
+    float: right;
+    margin-right: 200px;
+    -webkit-text-stroke: 6px black;
+    paint-order: stroke fill;
+    color: white;
 }
