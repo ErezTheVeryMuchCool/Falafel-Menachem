@@ -1,5 +1,18 @@
 ﻿* {
-    font-family: 'Sitka Banner';
+    font-family: Arial;
+}
+
+div {
+    margin: 0;
+    padding: 0;
+}
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #BF6900;
 }
 .tutorial {
     text-align: center; 
@@ -10,10 +23,41 @@
     margin: 0 auto;
 
 }
+.hero h1 {
+    color: white;
+    -webkit-text-stroke: 8px black;
+    font-size: 44px;
+    paint-order: stroke fill;
+    letter-spacing: 3px;
+    -webkit-font-smoothing: antialiased;
+}
+.hero h2 {
+    color: white;
+    -webkit-text-stroke: 6px black;
+    font-size: 32px;
+    paint-order: stroke fill;
+    letter-spacing: 2px;
+    -webkit-font-smoothing: antialiased;
+}
 .navi {
     padding: 10px;
     text-align: center;
-    background-color: turquoise
+    background-color: lightgreen;
+    align-content: center;
+}
+
+.list ul {
+    -webkit-text-stroke: 4px black;
+    paint-order: stroke fill;
+    color: white;
+    margin-left: 40px;
+    font-size:30px
+}
+.list h1 {
+    -webkit-text-stroke: 6px black;
+    paint-order: stroke fill;
+    color: white;
+    margin-left: 40px;
 }
 nav a {
     color: white; 
@@ -21,7 +65,19 @@ nav a {
     padding: 10px 15px; 
     margin: 0 10px; 
 }
-
+.foot a{
+    color: grey;
+    text-decoration: underline;
+}
+.foot a:hover{
+    color:darkgray;
+}
+.foot {
+    align-content: center;
+    text-align: center;
+    background-color: lightgreen;
+    margin-top: auto;
+}
 .button {
     background-color: #04AA6D;
     border: none;
@@ -31,5 +87,15 @@ nav a {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 0 auto;
+    font-weight: bold;
+    border-radius: 50px;
+}
+.tos{
+    margin-right:50px;
+    margin-left:50px;
+    color:antiquewhite;
+}
+.foreveryone img{
+    border-radius:100px;
+    align:"right";
 }
