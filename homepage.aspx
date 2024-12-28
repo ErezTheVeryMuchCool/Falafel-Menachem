@@ -9,7 +9,7 @@
     </div>
     <div class="foreveryone">
         <br />
-        <img src="Images/falafel.jpg" />
+        <img src="Images/falafel.jpg" width=400/>
         <h1>Falfel Is For Everyone.</h1>
         <h3>That's why here at Falfel Menahem we teach everyone the art of Falfel.</h3>
         <br />
@@ -19,23 +19,22 @@
         <br />
         <br />
         <br />
-        <br />
-        <br />
-        <br />
 
     </div>
     <div class="list">
         <br />
         <h1>Why You Shall Trust Us:</h1>
+        <a class ="button2" href="gallery.aspx">See It For Yourself.</a>
         <ul>
-            <li>Coffee</li>
-            <li>Tea</li>
-            <li>Milk</li>
+            <li>12 Years Of Experience</li>
+            <li>Thousands Of Customers Over The Years</li>
+            <li>Delicous Falfel</li>
         </ul>
         <br />
         <br />
     </div>  
     <div class="menahem">
+        <img src="Images/menachem.png" width ="500" />
         <br />
         <h1>But who am I?</h1>
         <br />
@@ -44,17 +43,17 @@
         <br />
         <br />
         <p>
-            I am menahem. An expert in falafel. <br />
-            I opened my first "Falfel Menachem" <br />
+            I am Menahem. An expert in falafel. <br />
+            I opened my first "Falfel Menachem" stand <br />
             12 years ago in Petach tikva. Since <br />
             then, I've expended to 5 more locations, <br />
-            and opened a Falfel School for everyone.
+            and opened a Falfel website for everyone to learn.
+            <br />
+            <br />
+            <br />
+            <br />
+            <---- Menachem
         </p>
-        <img src="Images/menachem.png" width ="200" />
-        <br />
-        <br />
-        <br />
-
 
     </div>
 </asp:Content>

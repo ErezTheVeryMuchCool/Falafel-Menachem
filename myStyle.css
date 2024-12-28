@@ -30,7 +30,7 @@ body {
     font-size: 44px;
     paint-order: stroke fill;
     letter-spacing: 3px;
-    -webkit-font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased
 }
 .hero h2 {
     color: white;
@@ -41,10 +41,20 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 .navi {
-    padding: 10px;
+/*    padding: 10px;*/
     text-align: center;
     background-color: lightgreen;
     align-content: center;
+}
+
+.navi img {
+    float:left;
+}
+
+.links {
+    margin-right:100px;
+    padding:0;
+
 }
 
 .list ul {
@@ -63,7 +73,6 @@ body {
 }
 .list {
     background-color: #FF9F3D;
-    margin-up:200px;
     padding: 0;
 }
 nav a {
@@ -98,14 +107,29 @@ nav a {
     border-radius: 50px;
     margin-left: 100px;
 }
+.button2 {
+    background-color: #04AA6D;
+    border: none;
+    color: white;
+    padding: 30px 64px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 40px;
+    font-weight: bold;
+    border-radius: 200px;
+    margin-right: 50px;
+    float: right;
+}
 .tos{
     margin-right:50px;
     margin-left:50px;
     color:antiquewhite;
 }
 .foreveryone img{
-    border-radius:100px;
+    border-radius:30px;
     float: right;
+    margin-right:50px;
 }
 .foreveryone h1,
 .foreveryone h3 {
@@ -130,23 +154,54 @@ nav a {
 
 .menahem {
     background-color: #FFB875;
+    text-align: center;
+    height: 500px;
 }
 
 .menahem p {
     text-align: center;
     float: right;
-    margin-right: 150px;
     -webkit-text-stroke: 8px black;
     paint-order: stroke fill;
     color: white;
-    font-size: 32px;
+    font-size: 24px;
 }
 
 .menahem h1 {
     text-align: center;
     float: right;
-    margin-right: 200px;
     -webkit-text-stroke: 6px black;
     paint-order: stroke fill;
     color: white;
+    margin-right:150px
+}
+
+.menahem img {
+    float:left;
+}
+
+
+.stand {
+    background-color: #F08000;
+}
+
+td img{
+    align-content: center;
+}
+.costumers td img,
+.stand td img{
+    margin: 0 30px;
+}
+.costumers td,
+.stand td{
+    font-size:20px
+}
+.costumers h1,
+.stand h1{
+    align-content:center;
+    text-align:center;
+}
+table {
+    margin: auto;
+    text-align: center;
 }

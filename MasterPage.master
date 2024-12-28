@@ -12,9 +12,11 @@
 <body>
     <div class ="navi">
         <nav>
-            <img src="Images/logo.png" width ="100px"/>
-            <h1 style="margin: 0; font-size: 1.5rem;">Falafel Menachem</h1>
-            <div style="margin-left: auto;">
+            <a href="homepage.aspx">
+                <img src="Images/logo.png" width = "100px"/>
+            </a>
+            <div class="links" style="margin-left: auto;">
+                <h1 style="margin: 0; font-size: 1.5rem;">Falafel Menachem</h1>
                 <a href="homepage.aspx" style="margin: 0 10px;">Home</a>
                 <a href="register.aspx" style="margin: 0 10px;">Register</a>
                 <a href="gallery.aspx" style="margin: 0 10px;">Photo Gallery</a>
