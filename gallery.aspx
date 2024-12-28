@@ -31,7 +31,7 @@
         <h1>Some Of Our Stands:</h1>
         <br />
         <table>
-                          <tr>
+              <tr>
                   <td>
                       <img src="Images/MenachemStand.png" width="400px" />
                   </td>

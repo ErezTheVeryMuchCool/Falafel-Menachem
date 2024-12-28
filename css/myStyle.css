@@ -16,8 +16,11 @@ body {
     gap: 0;
 }
 .tutorial {
-    text-align: center; 
-    margin: 0 auto; 
+    text-align: center;
+    margin: 0 auto;
+    color: white;
+    -webkit-text-stroke: 8px black;
+    paint-order: stroke fill;
 }
 .hero {
     text-align: center;
@@ -27,8 +30,8 @@ body {
 .hero h1 {
     color: white;
     -webkit-text-stroke: 8px black;
-    font-size: 44px;
     paint-order: stroke fill;
+    font-size: 44px;
     letter-spacing: 3px;
     -webkit-font-smoothing: antialiased
 }
@@ -182,26 +185,122 @@ nav a {
 
 
 .stand {
+    padding: 20px;
     background-color: #F08000;
 }
-
+.costumers {
+    padding: 20px;
+}
 td img{
     align-content: center;
 }
 .costumers td img,
 .stand td img{
-    margin: 0 30px;
+    margin: 0 5px;
 }
 .costumers td,
 .stand td{
     font-size:20px
 }
 .costumers h1,
-.stand h1{
-    align-content:center;
-    text-align:center;
+.stand h1 {
+    align-content: center;
+    text-align: center;
+    color: white;
+    -webkit-text-stroke: 8px black;
+    paint-order: stroke fill;
 }
 table {
     margin: auto;
+/*    margin-right:25px;*/
     text-align: center;
+    color: white;
+    -webkit-text-stroke: 3px black;
+    paint-order: stroke fill;
+}
+input {
+    padding: 32px;
+    font-size: 32px;
+    border-radius: 20px
+}
+
+input[type="radio"], input[type=checkbox] {
+    width: 50px;
+    height: 50px;
+    border: 20px solid black;
+}
+.learnn label {
+    font-size: 44px !important; 
+}
+
+.gender label {
+    font-size: 44px !important;
+}
+.reg {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.reg label {
+    font-size: 64px;
+    padding: 20px;
+}
+
+.reg select {
+    padding: 32px;
+    font-size: 32px;
+    border-radius: 20px
+}
+
+input[type=reset], input[type=submit] {
+    background-color: #04AA6D;
+    border: none;
+    color: white;
+    padding: 30px 64px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 32px;
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+.reg button:hover {
+    background-color: darkgreen;
+}
+
+.reg label {
+    color: white;
+    -webkit-text-stroke: 8px black;
+    paint-order: stroke fill;
+    font-weight: bold;
+}
+
+
+.firstname {
+    background-color: #F08000;
+
+}
+
+.surname {
+    background-color: #F08000;
+}
+
+.gender, .GenderLabel {
+    background-color: #FF9F3D
+}
+
+.age {
+    background-color: #FF9F3D
+}
+
+.learnn, .learnnLabel, .flavor, .flavorLabel, .submit {
+    padding: 20px;
+    background-color: #FFB875
+}
+
+.tos, .about {
+    color: white;
+    -webkit-text-stroke: 1px black;
+    paint-order: stroke fill;
 }

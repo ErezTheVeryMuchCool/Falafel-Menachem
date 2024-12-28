@@ -5,7 +5,7 @@
 <html>
 <head runat="server">
     <title>Falafel Menachem</title>
-    <link rel="stylesheet" href="myStyle.css" />
+    <link rel="stylesheet" href="css/myStyle.css" />
     <asp:ContentPlaceHolder id="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
@@ -18,7 +18,7 @@
             <div class="links" style="margin-left: auto;">
                 <h1 style="margin: 0; font-size: 1.5rem;">Falafel Menachem</h1>
                 <a href="homepage.aspx" style="margin: 0 10px;">Home</a>
-                <a href="register.aspx" style="margin: 0 10px;">Register</a>
+                <a href="Registration.aspx" style="margin: 0 10px;">Register</a>
                 <a href="gallery.aspx" style="margin: 0 10px;">Photo Gallery</a>
             </div>
         </nav>

@@ -5,7 +5,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <div class="hero">
         <h1>Welcome To Falfel Menahem</h1>
-        <h2>A falafel community for everyone.</h2>      
+        <h2>A Falafel Community Powered By Hummus And Dreams.</h2>      
     </div>
     <div class="foreveryone">
         <br />
