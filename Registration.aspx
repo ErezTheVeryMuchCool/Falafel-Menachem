@@ -82,12 +82,12 @@
                   <input type="checkbox" id="Salty" name="flavor" value="Salty"><br>
 
                   <label for="other">Other...</label>
-                  <input type="text" id="other" name="username" placeholder ="Let us know.." required><br><br>
+                  <input type="text" id="otherr" name="username" placeholder ="Let us know.." required><br><br>
 
             </div>
             <div class="submit">
-                <input type="reset" balue="Reset" />
-                <input type="submit" value="Submit">
+                <input type="reset" value="Reset" />
+                <input type="submit" name="Submit" value="Submit">
             </div>
             
         </form>
