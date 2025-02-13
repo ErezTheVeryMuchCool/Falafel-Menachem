@@ -69,7 +69,7 @@
                   <input type="checkbox" id="History" name="learnn" value="History"><br>
             </div>
             <div class="flavorLabel">
-                <label for="flavor">What Are Your Prefferd Flavors? Choose Atleast One.</label><br /><br />
+                <label for="flavor">What Are Your Prefferd Flavors? Choose atleast One.</label><br /><br />
             </div>
             <div class ="flavor">
                   <label for="hot">Spicy Falafel</label>
