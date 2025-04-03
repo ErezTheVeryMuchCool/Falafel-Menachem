@@ -10,6 +10,8 @@
     </asp:ContentPlaceHolder>
 </head>
 <body>
+     <%=Session["Username"] + "<br>"%>
+     
     <div class ="navi">
         <nav>
             <a href="homepage.aspx">
@@ -20,9 +22,14 @@
                 <a href="homepage.aspx" style="margin: 0 10px;">Home</a>
                 <a href="Registration.aspx" style="margin: 0 10px;">Register</a>
                 <a href="gallery.aspx" style="margin: 0 10px;">Photo Gallery</a>
+                <%if (Session["Username"] == "Guest") { 
+                Response.Write("<a href='LogIn.aspx' style='margin: 0 10px;'>Log In</a>");
+                        }%>
+                <%=show%>
             </div>
+                     
         </nav>
-
+        <%Response.Write(Application["msg"]); %>   
     </div>
 
 

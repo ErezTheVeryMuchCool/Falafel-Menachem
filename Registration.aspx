@@ -82,7 +82,7 @@
                   <input type="checkbox" id="Salty" name="flavor" value="Salty"><br>
 
                   <label for="other">Other...</label>
-                  <input type="text" id="otherr" name="username" placeholder ="Let us know.." required><br><br>
+                  <input type="text" id="otherr" name="otherr" placeholder ="Let us know.."><br><br>
 
             </div>
             <div class="submit">
