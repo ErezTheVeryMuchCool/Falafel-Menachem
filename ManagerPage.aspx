@@ -10,9 +10,16 @@
             Response.Write("<label for='message'>Message:</label><br />");
             Response.Write("<input type='text' id='message' name='message' placeholder='its Falafel Friday!'><br><br>");
             Response.Write("</div>");
-            Response.Write("<div class='submit'>");
+            Response.Write("<div class='MenageSubmit'>");
             Response.Write("<input type='submit' name='Submit' value='Submit'>");
             Response.Write("</div>");
+
+            Response.Write("<div class='delete-form'>");
+            Response.Write("<form method='post'");
+            Response.Write("<label for='deleteEntry'>Delete Username:</label><br />");
+            Response.Write("<input type='text' id='deleteEntry' name='deleteEntry' placeholder='Enter username to delete'><br><br>");
+            Response.Write("<input type='submit' name='Delete' value='Delete'>");
+            Response.Write("</form>");
 
         }
         else
@@ -20,6 +27,10 @@
             Response.Write("You shall not be here!");
         }
     %>
+    
+    <formview>
+
+    </formview>
 
 
 

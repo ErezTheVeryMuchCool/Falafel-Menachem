@@ -4,30 +4,46 @@
 
 <html>
 <head runat="server">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,200..700;1,200..700&family=Comic+Relief:wght@400;700&display=swap" rel="stylesheet">
     <title>Falafel Menachem</title>
     <link rel="stylesheet" href="css/myStyle.css" />
     <asp:ContentPlaceHolder id="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
 <body>
-     <%=Session["Username"] + "<br>"%>
+     
      
     <div class ="navi">
         <nav>
+      
             <a href="homepage.aspx">
                 <img src="Images/logo.png" width = "100px"/>
             </a>
             <div class="links" style="margin-left: auto;">
                 <h1 style="margin: 0; font-size: 1.5rem;">Falafel Menachem</h1>
+                <%=Application["course"]%>
                 <a href="homepage.aspx" style="margin: 0 10px;">Home</a>
-                <a href="Registration.aspx" style="margin: 0 10px;">Register</a>
                 <a href="gallery.aspx" style="margin: 0 10px;">Photo Gallery</a>
-                <%if (Session["Username"] == "Guest") { 
-                Response.Write("<a href='LogIn.aspx' style='margin: 0 10px;'>Log In</a>");
-                        }%>
+                <a href="learn.aspx">Course</a>
                 <%=show%>
+                <%if (Session["Username"] == "Guest. Please Log in.") {
+                        Response.Write("<a href='LogIn.aspx' style='margin: 0 10px;'>Log In</a>");
+                        Response.Write("<a href=\"Registration.aspx\" style=\"margin: 0 10px;\">Register</a>");
+
+                    }
+                    else {
+                        Response.Write("<div class =\"logout\">\r\n    <a class =\"logout2\" href=\"Logout.aspx\">Log Out</a>\r\n</div>");
+                    }%>
+                <br />
+                <div class="message">
+                    
+                </div>
+                
             </div>
-                     
+
+         
         </nav>
         <%Response.Write(Application["msg"]); %>   
     </div>
@@ -42,7 +58,7 @@
     </form>
         <div class="foot" >
             <footer>
-                <p>&copy; 2024 Falfel Menahem. All rights reserved.</p>
+                <p>&copy; <%: DateTime.Now.Year %> Falfel Menahem. All rights reserved.</p>
                 <a href="about.aspx">About Us</a>
                 <a href="tos.aspx">Terms Of Service</a>
             </footer>

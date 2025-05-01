@@ -4,17 +4,19 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <div class="tutorial">
-
-
         <h1>Learn How to make falafel, from the best.</h1>
-        <h2>A falafel community for everyone.</h2        <p>
-            Falafel Is for everyone. If you want to do it, you can. <br />
-            In this page, you can find tutorials for everything that involves <br />
-            Falafel, from the most basic tutorial on how to make<br />
-            it to how to improve on a really advanced level.
-        </p>
-        <h1>Soon, You could learn.</h1>
-    </div>
+        <%if (Session["Username"] == "Guest. Please Log in.") {
+                Response.Write("<h2>But to do that, you must first <a href=\"LogIn.aspx\">Log In</a></h2><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />");
+            }
+            else {
+                Response.Write("<label>\r\n   <input type=\"radio\" name=\"Course\" value=\"begginer\" checked>\r\n       <img src=\"Images/Begginer.png\" width=\"400px\" alt=\"Option 1\" class=\"radio-img\" />\r\n    </label>\r\n    <label>\r\n        <input type=\"radio\" name=\"Course\" value=\"expanding\" checked>\r\n    <img src=\"Images/Expanding.png\" width=\"400px\" alt=\"Option 2\" class=\"radio-img\" />\r\n</label>\r\n<label>\r\n    <input type=\"radio\" name=\"Course\" value=\"advanced\" checked>\r\n    <img src=\"Images/Advanced.png\" width=\"400px\" alt=\"Option 2\" class=\"radio-img\" />\r\n</label><br />\r\n <input type=\"submit\" name=\"Submit\" value=\"Lets Falafel ->\">");
+            }
+            %>
+
+        
+
+
+    
 
 </asp:Content>
 

@@ -3,13 +3,19 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+    <div class ="login">
+
+
+    
      <form method="post">
-        email <input type="text" id="username" name="username" /><br />
+        username <input type="text" id="username" name="username" /><br />
          password <input type="password" id="password" name="password" /><br />
-               <input type="submit" id="submit" name="submit" value="log in" />
+               <input type="submit" id="submit" name="submit" value="log in" /><br />
 
     </form>
 
+    <%=Hello%>
+    </div>
     
 
 </asp:Content>

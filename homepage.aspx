@@ -35,25 +35,16 @@
     </div>  
     <div class="menahem">
         <img src="Images/menachem.png" width ="500" />
-        <br />
-        <h1>But who am I?</h1>
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <p>
+        <h1 style ="top:10px">But who am I?</h1>
+        <p style ="top:50px">
             I am Menahem. An expert in falafel. <br />
             I opened my first "Falfel Menachem" stand <br />
             12 years ago in Petach tikva. Since <br />
             then, I've expended to 5 more locations, <br />
             and opened a Falfel website for everyone to learn.
-            <br />
-            <br />
-            <br />
-            <br />
-            <---- Menachem
         </p>
+
+        <h1> <--------------- Menachem</h1>
 
     </div>
 </asp:Content>

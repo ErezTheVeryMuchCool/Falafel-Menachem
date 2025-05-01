@@ -9,6 +9,7 @@ using System.Data;
 public partial class _Default : System.Web.UI.Page
 {
     public string msg = "";
+    public string Hello = "";
 
     protected void Page_Load(object sender, EventArgs e)
 
@@ -25,9 +26,9 @@ public partial class _Default : System.Web.UI.Page
             int length = table.Rows.Count;
 
             if (length > 0)
-                Session["Username"] = "Hello " + username;
+                Session["Username"] = username;
             else
-                Session["Username"] = "User not found";
+                Session["Username"] = "Guest. Please Log in.";         
             
             string adminsql = "select * from [Table] where username = '" + username + "' and password = '" + password + "'and isAdmin = 'False'";
             DataTable AdminTable = MyAdoHelper.ExecuteDataTable(fileName, adminsql);
@@ -35,6 +36,20 @@ public partial class _Default : System.Web.UI.Page
             if (admin > 0)
             {
                 Session["Admin"] = "True";
+            }
+            Hello = "Hello " + Session["Username"];
+
+            string learnsql = "SELECT learn FROM [Table] WHERE username = '" + username + "';";
+            DataTable learn = MyAdoHelper.ExecuteDataTable(fileName, learnsql);
+            string learnValue = "";
+            if (learn.Rows.Count > 0)
+            {
+                learnValue = learn.Rows[0]["learn"].ToString();
+            }
+
+            if (learnValue != "NULL")
+            {
+                Application["course"] = "You are currently learning the " + learnValue + " Course.";
             }
         }
 

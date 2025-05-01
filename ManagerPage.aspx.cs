@@ -34,6 +34,7 @@ public partial class ManagerPage : System.Web.UI.Page
             userList += "<th>learn</th>";
             userList += "<th>flavor</th>";
             userList += "<th>other</th>";
+            userList += "<th>IsAdmin</th>";
             userList += "</tr>";
 
             for (int i = 0; i < rows; i++)
@@ -48,6 +49,7 @@ public partial class ManagerPage : System.Web.UI.Page
                 userList += "<td>" + table.Rows[i]["learn"] + "</td>";
                 userList += "<td>" + table.Rows[i]["flavor"] + "</td>";
                 userList += "<td>" + table.Rows[i]["other"] + "</td>";
+                userList += "<td>" + table.Rows[i]["IsAdmin"] + "</td>";
                 userList += "</tr>";
             }
             userList += "</table>";
@@ -59,6 +61,12 @@ public partial class ManagerPage : System.Web.UI.Page
 
         string message = Request.Form["message"];
         Application["msg"] = message;
+
+        string delete = Request.Form["deleteEntry"];
+        sql = "DELETE FROM [Table] WHERE username = '" + delete + "';";
+        MyAdoHelper.DoQuery(fileName, sql);
+
+
 
 
 

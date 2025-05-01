@@ -6,38 +6,37 @@
     <div class ="reg">
         <form action="/submit" method="post">
             <div class="username">
-                <label for="username">Username:</label><br />
-                <input type="text" id="username" name="username" placeholder ="Enter Your Username" required><br><br>
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" placeholder ="Enter Your Username" required>
             </div>
             <div class ="password">
-                <label for="password">Password:</label><br />
-                <input type="password" id="password" name="password" placeholder ="Enter Your Password"required><br><br>
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder ="Enter Your Password"required>
             </div>
-
             <div class="firstname">
-                <label for="firstname">First Name:</label><br />
-                <input type="text" id="firstname" name="firstname" placeholder ="Enter Your First Name" required><br><br>
+                <label for="firstname">First Name:</label>
+                <input type="text" id="firstname" name="firstname" placeholder ="Enter Your First Name" required>
             </div>
             <div class ="surname">
-                <label for="surname">Surname:</label><br />
-                <input type="text" id="surname" name="surname" placeholder ="Enter Your Surname" required><br><br>
+                <label for="surname">Surname:</label>
+                <input type="text" id="surname" name="surname" placeholder ="Enter Your Surname" required>
             </div>
-            <div class="GenderLabel">
-                <label>Gender:</label><br />
-            </div>
+
             
             <div class ="gender">
-                <input type="radio" id="male" name="gender" value="male" required>
-                <label for="male">  Male</label>
-                <br />
+                <label style="font-size:40px !important">Gender:</label><br />
+
+                <input type="radio" id="male" name="gender" value="male" > 
+                <label for="male">  Male</label><br />
+
                 <input type="radio" id="female" name="gender" value="female" >
-                <label for="female">Female</label>
-                <br />
+                <label for="female">Female</label><br />
+
                 <input type="radio" id="other" name="gender" value="other">
-                <label for="other"> Other</label><br /><br /><br />
+                <label for="other"> Other</label>
             </div>
             <div class="age">
-                <label for="age">Age:</label><br /><br />
+                <br />
                 <select id="age" name="age" required>
                     <option value="" disabled selected>Select your age</option>
                     <option value="1-18">1-18</option>
@@ -49,25 +48,7 @@
                     <option value="65+">65+</option>
                 </select><br><br>
             </div>
-            <div class="learnnLabel">
-                <label for="learnn">What Would you like to learn? Choose atleast one.</label><br /><br />
-            </div>
-            <div class ="learnn">
-                  <label for="beginner">How To Make Basic Falafel </label>
-                  <input type="checkbox" id="basicFalafel" name="learnn" value="basicFalafel"><br>
-
-                  <label for="sauce">Secret Falafel Sauces</label>
-                  <input type="checkbox" id="Sauces" name="learnn" value="Sauces"><br>
-
-                  <label for="advanced">Advanced Techniques</label>
-                  <input type="checkbox" id="Advanced" name="learnn" value="Advanced"><br>
-
-                  <label for="sides">Sides Like Hummus Or Pita</label>
-                  <input type="checkbox" id="Sides" name="learnn" value="Sides"><br>
-  
-                  <label for="history">The History Of Falafel</label>
-                  <input type="checkbox" id="History" name="learnn" value="History"><br>
-            </div>
+           
             <div class="flavorLabel">
                 <label for="flavor">What Are Your Prefferd Flavors? Choose atleast One.</label><br /><br />
             </div>

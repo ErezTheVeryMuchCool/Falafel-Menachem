@@ -15,12 +15,12 @@ public partial class MasterPage : System.Web.UI.MasterPage
 
 
         string fileName = "Database.mdf";
-        string sql = "select * from [Table] where username = '" + Session["Username"] + "' and IsAdmin = '" + 0 + "'";
+        string sql = "select * FROM [Table] WHERE username = '" + Session["Username"] + "' and IsAdmin = '" + 1 + "'";
 
         DataTable table = MyAdoHelper.ExecuteDataTable(fileName, sql);
         int length = table.Rows.Count;
 
-        if (length == 0)
+        if (length == 1)
             show = "<a href='ManagerPage.aspx' style='margin: 0 10px;'>Manage</a>";
         else
             show = "";
