@@ -15,11 +15,11 @@
             </div>
             <div class="firstname">
                 <label for="firstname">First Name:</label>
-                <input type="text" id="firstname" name="firstname" placeholder ="Enter Your First Name" required>
+                <input type="text" id="firstname" name="firstname" placeholder ="Enter Your First Name" >
             </div>
             <div class ="surname">
                 <label for="surname">Surname:</label>
-                <input type="text" id="surname" name="surname" placeholder ="Enter Your Surname" required>
+                <input type="text" id="surname" name="surname" placeholder ="Enter Your Surname" >
             </div>
 
             
@@ -37,7 +37,7 @@
             </div>
             <div class="age">
                 <br />
-                <select id="age" name="age" required>
+                <select id="age" name="age" >
                     <option value="" disabled selected>Select your age</option>
                     <option value="1-18">1-18</option>
                     <option value="18-24">18-24</option>

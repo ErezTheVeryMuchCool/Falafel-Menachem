@@ -6,7 +6,6 @@
     {
         // Code that runs on application startup
         Application["msg"] = "";
-        Application["course"] = "You are currently not learning any course";
     }
 
     void Application_End(object sender, EventArgs e)
@@ -26,6 +25,7 @@
         // Code that runs when a new session is started
         Session["Username"] = "Guest. Please Log in.";
         Session["Admin"] = "False";
+        Session["course"] = "You are currently not learning any course";
 
     }
 

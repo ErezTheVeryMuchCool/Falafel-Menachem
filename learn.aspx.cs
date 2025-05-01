@@ -16,11 +16,11 @@ public partial class learn : System.Web.UI.Page
         Console.WriteLine(learnn);
         if (learnn == null)
         {
-            Application["course"] = "You are currently not learning any course";
+            Session["course"] = "You are currently not learning any course";
         }
         else
         {
-            Application["course"] = "You are currently learning the " + learnn + " Course.";
+            Session["course"] = "You are currently learning the " + learnn + " Course.";
         }
         
         string sql = "UPDATE [Table] SET learn = '" + learnn + "' WHERE username = '" + Session["username"]+ "';";

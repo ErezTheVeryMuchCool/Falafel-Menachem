@@ -49,7 +49,7 @@ public partial class _Default : System.Web.UI.Page
 
             if (learnValue != "NULL")
             {
-                Application["course"] = "You are currently learning the " + learnValue + " Course.";
+                Session["course"] = "You are currently learning the " + learnValue + " Course.";
             }
         }
 

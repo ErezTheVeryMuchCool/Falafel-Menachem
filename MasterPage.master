@@ -23,7 +23,7 @@
             </a>
             <div class="links" style="margin-left: auto;">
                 <h1 style="margin: 0; font-size: 1.5rem;">Falafel Menachem</h1>
-                <%=Application["course"]%>
+                <%=Session["course"]%>
                 <a href="homepage.aspx" style="margin: 0 10px;">Home</a>
                 <a href="gallery.aspx" style="margin: 0 10px;">Photo Gallery</a>
                 <a href="learn.aspx">Course</a>

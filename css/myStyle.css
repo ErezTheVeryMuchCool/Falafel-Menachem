@@ -46,6 +46,9 @@ input[type="radio"] {
     paint-order: stroke fill;
     text-decoration: none;
 }
+    .tutorial h2 {
+        text-decoration: none;
+    }
 .hero {
     text-align: center;
     margin: 0;
@@ -299,6 +302,7 @@ input[type=reset], input[type=submit] {
     font-size: 32px;
     font-weight: bold;
     border-radius: 20px;
+    cursor: pointer;
 }
 
 .reg button:hover {
