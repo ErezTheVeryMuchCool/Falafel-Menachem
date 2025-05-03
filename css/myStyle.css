@@ -229,6 +229,7 @@ nav a {
 td img{
     align-content: center;
 }
+
 .costumers td img,
 .stand td img{
     margin: 0 5px;
@@ -325,7 +326,6 @@ input[type=reset], input[type=submit] {
 }
 
 
-
 .firstname label {
     x
 }
@@ -383,4 +383,8 @@ input[type=reset], input[type=submit] {
 
 .gender input[type=radio] {
     display: inline-block;
+}
+
+.reg h1{
+    
 }

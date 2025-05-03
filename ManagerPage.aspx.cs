@@ -13,6 +13,7 @@ public partial class ManagerPage : System.Web.UI.Page
     public int rows = 0;
     public string sql = "";
 
+
     protected void Page_Load(object sender, EventArgs e)
     {
 
@@ -27,6 +28,7 @@ public partial class ManagerPage : System.Web.UI.Page
             userList += "<tr>";
             userList += "<th>username</th>";
             userList += "<th>password</th>";
+            userList += "<th>email</th>";
             userList += "<th>firstname</th>";
             userList += "<th>surname</th>";
             userList += "<th>gender</th>";
@@ -42,6 +44,7 @@ public partial class ManagerPage : System.Web.UI.Page
                 userList += "<tr>";
                 userList += "<td>" + table.Rows[i]["username"] + "</td>";
                 userList += "<td>" + table.Rows[i]["password"] + "</td>";
+                userList += "<td>" + table.Rows[i]["email"] + "</td>";
                 userList += "<td>" + table.Rows[i]["firstname"] + "</td>";
                 userList += "<td>" + table.Rows[i]["surname"] + "</td>";
                 userList += "<td>" + table.Rows[i]["gender"] + "</td>";
@@ -65,6 +68,9 @@ public partial class ManagerPage : System.Web.UI.Page
         string delete = Request.Form["deleteEntry"];
         sql = "DELETE FROM [Table] WHERE username = '" + delete + "';";
         MyAdoHelper.DoQuery(fileName, sql);
+        if (Request.Form["Delete"] != null)
+            Response.Redirect("ManagerPage.aspx");
+
 
 
 
