@@ -5,7 +5,11 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <%if (Session["Admin"].Equals("True"))
         {
+
+            Response.Write("<div class='userList'>");
             Response.Write(userList);
+            Response.Write("</div>");
+
             Response.Write("<div class='message'>");
             Response.Write("<label for='message'>Message:</label><br />");
             Response.Write("<input type='text' id='message' name='message' placeholder='its Falafel Friday!'><br><br>");
@@ -20,6 +24,11 @@
             Response.Write("<input type='text' id='deleteEntry' name='deleteEntry' placeholder='Enter username to delete'><br><br>");
             Response.Write("<input type='submit' name='Delete' value='Delete'>");
             Response.Write("</form>");
+
+            Response.Write("<div class='stats'>");
+            Response.Write("<h3>Statistics</h3>");
+            Response.Write("<p>Total Users: " + rows + "</p>");
+            Response.Write("</div>");
 
         }
         else

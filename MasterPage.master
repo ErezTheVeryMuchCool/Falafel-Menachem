@@ -34,6 +34,7 @@
 
                     }
                     else {
+                        Response.Write("<a href=\"ChangeData.aspx\" style=\"margin: 0 10px;\">Change Your Data</a>");
                         Response.Write("<div class =\"logout\">\r\n    <a class =\"logout2\" href=\"Logout.aspx\">Log Out</a>\r\n</div>");
                     }%>
                 <br />
@@ -60,7 +61,7 @@
             <footer>
                 <p>&copy; <%: DateTime.Now.Year %> Falfel Menahem. All rights reserved.</p>
                 <a href="about.aspx">About Us</a>
-                <a href="tos.aspx">Terms Of Service</a>
+                <a href="Docs/TOS Falafel Menahem.pdf" target="_blank">Terms Of Service</a>
             </footer>
         </div>
 </body>

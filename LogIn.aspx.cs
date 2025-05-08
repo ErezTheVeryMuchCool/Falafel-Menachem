@@ -25,11 +25,9 @@ public partial class _Default : System.Web.UI.Page
             DataTable table = MyAdoHelper.ExecuteDataTable(fileName, sql);
             int length = table.Rows.Count;
 
-            if (length > 0)
-                Session["Username"] = username;
-            else
-                Session["Username"] = "Guest. Please Log in.";         
-            
+
+                
+
             string adminsql = "select * from [Table] where username = '" + username + "' and password = '" + password + "'and isAdmin = 'False'";
             DataTable AdminTable = MyAdoHelper.ExecuteDataTable(fileName, adminsql);
             int admin = table.Rows.Count;
@@ -37,7 +35,7 @@ public partial class _Default : System.Web.UI.Page
             {
                 Session["Admin"] = "True";
             }
-            Hello = "Hello " + Session["Username"];
+            
 
             string learnsql = "SELECT learn FROM [Table] WHERE username = '" + username + "';";
             DataTable learn = MyAdoHelper.ExecuteDataTable(fileName, learnsql);
@@ -50,6 +48,18 @@ public partial class _Default : System.Web.UI.Page
             if (learnValue != "NULL")
             {
                 Session["course"] = "You are currently learning the " + learnValue + " Course.";
+            }
+
+            if (length > 0)
+            {
+                Session["Username"] = username;
+                Hello = "Hello " + Session["Username"];
+            }
+            else
+            {
+                Session["Username"] = "Guest. Please Log in.";
+                Hello = "Wrong Password or username. Try again.";
+                Session["course"] = "You are currently not learning any course";
             }
         }
 

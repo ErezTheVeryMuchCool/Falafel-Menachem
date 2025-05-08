@@ -12,19 +12,24 @@ public partial class learn : System.Web.UI.Page
     public string learnn = "";
     protected void Page_Load(object sender, EventArgs e)
     {
-        learnn = Request.Form["course"];
-        Console.WriteLine(learnn);
-        if (learnn == null)
+        if (Request.Form["Submit"] != null)
         {
-            Session["course"] = "You are currently not learning any course";
+            learnn = Request.Form["course"];
+            Console.WriteLine(learnn);
+            if (learnn == null)
+            {
+                Session["course"] = "You are currently not learning any course";
+            }
+            else
+            {
+                string fileName = "Database.mdf";
+                Session["course"] = "You are currently learning the " + learnn + " Course.";
+                string sql = "UPDATE [Table] SET learn = '" + learnn + "' WHERE username = '" + Session["username"] + "';";
+                MyAdoHelper.DoQuery(fileName, sql);
+            }
+
+            Response.Redirect(learnn + ".aspx");
         }
-        else
-        {
-            Session["course"] = "You are currently learning the " + learnn + " Course.";
-        }
-        
-        string sql = "UPDATE [Table] SET learn = '" + learnn + "' WHERE username = '" + Session["username"]+ "';";
-        string fileName = "Database.mdf";
-        MyAdoHelper.DoQuery(fileName, sql);
+ 
     }
 }
